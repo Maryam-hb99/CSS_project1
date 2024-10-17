@@ -1,0 +1,198 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 0px 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0; /* Increase top and bottom padding */
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it sits above other elements */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color */
+    font-size: 1.5em; /* Increase font size */
+    padding: 10px 15px; /* Increase padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.home-section {
+    position: relative;
+    padding: 100px 0; /* Increase vertical padding */
+    margin: 0;
+    color: white; /* Text color for contrast */
+    text-align: center;
+    background-image: url('res/web_image_background-small.jpg'); /* Replace with your image file path */
+    background-size: cover; /* Covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    min-height: 50vh; /* Make the section take full viewport height */
+}
+
+.text-container {
+    width: 60%; /* Increase width to make it larger */
+    max-width: 600px; /* Optional: set a max width */
+    height: auto; /* Auto height to fit content */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    padding: 40px; /* Increase padding for better spacing */
+    margin: 0 auto; /* Center the container */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Optional: shadow for depth */
+}
+
+.home-section h2 {
+    font-size: 3em; /* Increase title size */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.home-section p {
+    font-size: 1.5em; /* Increase paragraph font size */
+    max-width: 100%; /* Prevents overflow of the text */
+    margin: 0; /* Reset margin */
+}
+
+.about-section {
+    padding: 50px;
+    background-color: #f4f4f4; /* Optional: background color for the section */
+}
+
+.about-container {
+    display: flex; /* Use Flexbox to align items */
+    align-items: center; /* Center vertically */
+    max-width: 1200px; /* Optional: max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.about-photo {
+    width: 150px; /* Set width of the photo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the image circular */
+    margin-right: 20px; /* Space between image and vertical line */
+}
+
+.vertical-line {
+    width: 2px; /* Width of the vertical line */
+    background-color: #333; /* Color of the line */
+    height: 100px; /* Height of the line */
+    margin: 0 20px; /* Space around the line */
+}
+
+.about-text {
+    padding-left: 20px; /* Space between the line and text */
+}
+
+.more-about-btn {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Space above the button */
+}
+
+.more-about-btn:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+
+
+#projects {
+    text-align: center;
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Centers the project items */
+}
+
+.project {
+    position: relative;
+    margin: 15px; /* Space between project items */
+    overflow: hidden; /* Hides overflow */
+}
+
+.project img {
+    width: 300px; /* Set a fixed width for all images */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+
+.project:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth opacity transition */
+}
+
+.project:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
